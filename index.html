@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Идеи для подарков</h1>
+    </header>
+    <main>
+        <section class="card__section">
+            <ul class="card__list">
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container__button-all-delete">
+            <button class="button-all-delete">Очистить всё</button>
+        </div>
+    </footer>
+
+    <template>
+        <li class="card__item">
+            <article class="card">
+                <h3 class="card__title"></h3>
+                <div class="image__container">
+                    <img class="card__image">
+                </div>
+                <p class="card__text"></p>
+                <div class="button__container">
+                    <button class="card__button-buy"></button>
+                    <button class="card__button-like"></button>
+                    <button class="card__button-delete"></button>
+                </div>
+            </article>
+        </li>
+    </template>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
