@@ -1,6 +1,8 @@
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
 }
 .header__title{
     font-size: 4rem;
@@ -35,6 +37,7 @@
 .button__container{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 35px;
 }
 .card__button-like{
     background-image: url(../assets/like.png);
@@ -82,7 +85,7 @@
 .container__button-all-delete{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin: 20px;
 }
 .button-all-delete{
     background-color: black;
@@ -93,4 +96,29 @@
 }
 .card.card-bought{
     color: red;
+}
+.card{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.input__container{
+    display: flex;
+    gap: 20px;
+}
+.button-add{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+input{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+input:focus{
+    background-color: #e4e4e4;
+}
+footer{
+    margin-top: 50px;
+    border-top: 2px solid black;
 }
