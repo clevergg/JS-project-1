@@ -104,6 +104,8 @@
 .input__container{
     display: flex;
     gap: 20px;
+    position: relative;
+
 }
 .button-add{
     background-color: black;
@@ -121,4 +123,9 @@ input:focus{
 footer{
     margin-top: 50px;
     border-top: 2px solid black;
+}
+.error__message{
+    color: red;
+    position: absolute;
+    top: 50px;
 }
