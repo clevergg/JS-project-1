@@ -1,9 +1,13 @@
+import '../styles/style.css';
+import book from '../assets/images/book.png'
+import boardGames from '../assets/images/board-games.png'
+import giftCertificate from '../assets/images/gift-certificate.png'
 const cardsData = [
     {
         id: 1,
         title: 'Книга',
         text: 'Отличный подарок для любителей книг',
-        image: './assets/images/book.png',
+        image: book,
         like: false,
         buy: false,
     },
@@ -11,7 +15,7 @@ const cardsData = [
         id: 2,
         title: 'Настольные игры',
         text: 'Отличный подарок для любителей настольных игр',
-        image: './assets/images/board-games.png',
+        image: boardGames,
         like: false,
         buy: false,
     },
@@ -19,7 +23,7 @@ const cardsData = [
         id: 3,
         title: 'Подарочный сертификат',
         text: 'Неплохой подарок если не знаете что нравиться получателю',
-        image: './assets/images/gift-certificate.png',
+        image: giftCertificate,
         like: false,
         buy: false,
     }
@@ -110,14 +114,12 @@ const checkError = () => {
 };
 
 inputTitle.addEventListener('input', () => {
-    handleInputLimit(inputTitle);
     checkError();
 });
 
 inputText.addEventListener('input', () => {
-    handleInputLimit(inputText);
     checkError();
-});
+})
 
 inputImage.addEventListener('input', () => {
     checkError();
